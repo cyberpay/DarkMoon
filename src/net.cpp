@@ -348,7 +348,7 @@ bool GetMyExternalIP2(const CService& addrConnect, const char* pszGet, const cha
 // We now get our external IP from the IRC server first and only use this as a backup
 bool GetMyExternalIP(CNetAddr& ipRet)
 
-void ThreadGetMyExternalIP(void* parg)
+void ThreadGetMyExternalIP(void* parg);
 {
     // Make this thread recognisable as the external IP detection thread
     RenameThread("darkmoon-ext-ip");
